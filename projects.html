@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects & Skills | Yogita Damodaran</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background-color: #0f0f0f;
+      color: #e6c79c;
+      font-family: 'Inter', sans-serif;
+    }
+
+    header {
+      background: #121212;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.3rem;
+      color: #e6c79c;
+    }
+
+    nav a {
+      color: #e6c79c;
+      text-decoration: none;
+      margin-left: 1.5rem;
+      font-weight: 600;
+    }
+
+    .page-heading {
+      background-color: #0f0f0f;
+      text-align: center;
+      padding: 3rem 2rem 1rem;
+    }
+
+    .page-heading h1 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 2.8rem;
+      color: #e6c79c;
+      margin: 0;
+      letter-spacing: 1.2px;
+    }
+
+    .section {
+      position: relative;
+      margin: 2rem auto;
+      max-width: 1100px;
+      background-color: #121212;
+      padding: 2.5rem 3rem;
+      border-radius: 1rem;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    }
+
+    .section h2 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.8rem;
+      color: #ffffff;
+      margin-bottom: 1rem;
+    }
+
+    .section ul {
+      list-style: disc;
+      padding-left: 1.2rem;
+      color: #e6c79c;
+      font-size: 1rem;
+      line-height: 1.6;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+
+    .skill-block {
+      background-color: #1a1a1a;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+    }
+
+    .skill-block h3 {
+      font-family: 'DM Serif Display', serif;
+      font-size: 1.3rem;
+      margin-bottom: 0.8rem;
+      color: #ffffff;
+    }
+
+    .skill-block p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #e6c79c;
+    }
+
+    .contact-section {
+      background-color: #121212;
+      color: #e6c79c;
+      text-align: center;
+      padding: 3rem 2rem 2rem;
+      font-family: 'DM Serif Display', serif;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .contact-section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #ffffff;
+    }
+
+    .contact-section p {
+      font-size: 1rem;
+      margin: 0.3rem 0;
+    }
+
+    .contact-section a {
+      color: #e6c79c;
+      font-weight: 600;
+      margin: 0 1rem;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .contact-section a:hover {
+      color: #ffffff;
+    }
+    .project-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 3rem auto;
+  gap: 2rem;
+  padding: 0 2rem;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.skill-block {
+  background-color: #121212;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+  color: #e6c79c;
+  transition: transform 0.3s ease;
+  font-family: 'Inter', sans-serif;
+}
+
+.skill-block:hover {
+  transform: translateY(-6px);
+}
+
+.skill-block h3 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: #fff;
+}
+
+
+.project-list {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.project {
+  background: #121212;
+  padding: 1.8rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  color: #e6c79c;
+}
+
+.project h3 {
+  font-family: 'DM Serif Display', serif;
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+}
+
+.project p {
+  font-size: 1rem;
+  color: #e6c79c;
+  line-height: 1.6;
+}
+
+.project-images {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.project-images img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 1rem;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
+}
+
+
+    .footer {
+      background: #121212;
+      color: #e6c79c;
+      text-align: center;
+      padding: 2rem;
+      font-family: 'DM Serif Display', serif;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">Yogita Damodaran</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="experience.html">Experience</a>
+      <a href="edu.html">Education</a>
+      <a href="achievements.html">Education</a>
+    </nav>
+  </header>
+
+  <section class="page-heading">
+    <h1>Projects & Skills</h1>
+  </section>
+
+  <!-- Projects Section -->
+ <section class="project-container">
+  <div class="project-list">
+    <div class="project">
+      <h3>Rh Incompatibility Simulator – IISc</h3>
+      <p>
+        A predictive simulation tool developed using biomedical data to guide RhIg dosage personalization. Built at IISc Bengaluru.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>Internship Portal – CFM, VIT</h3>
+      <p>
+        A React-based web portal for internship management and tracking student submissions within the CFM department.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>ASO Mapping Resolution – Innoviti</h3>
+      <p>
+        Identified and fixed a backend error in device distribution mapping logic. Resulted in 90% improvement in mapping accuracy.
+      </p>
+    </div>
+
+    <div class="project">
+      <h3>Arduino Water Monitoring System – VIT</h3>
+      <p>
+        Developed an Arduino-based water quality monitor with real-time LCD display and sensor calibration for campus use.
+      </p>
+    </div>
+  </div>
+
+  <div class="project-images">
+    <img src="PHOTO-2025-03-25-08-50-20.jpg" alt="">
+    <img src="image.png">
+    <img src="IMG_A38D37EA379E-1.jpeg" alt="Arduino Water Project">
+    <img src="PHOTO-2025-03-25-08-50-22.jpg" alt="Arduino Water Project">
+  </div>
+</section>
+
+
+<!-- Skills Section -->
+<section class="section">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <div class="skill-block">
+      <h3>Programming Languages</h3>
+      <p>Python, C++, C, Java, SQL (Basic)</p>
+    </div>
+    <div class="skill-block">
+      <h3>Web Technologies</h3>
+      <p>HTML, CSS, JavaScript, React</p>
+    </div>
+    <div class="skill-block">
+      <h3>Tools</h3>
+      <p>VS Code, Jupyter Notebook, Eclipse, Git, LaTeX, MATLAB, PSpice</p>
+    </div>
+    <div class="skill-block">
+      <h3>Domains & Interests</h3>
+      <p>Bioinformatics, UI/UX, Machine Learning, Communication, Public Speaking</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact -->
+  <section class="contact-section">
+    <h2>Let’s Connect</h2>
+    <p>Email: <a href="mailto:yogitadamodaran@gmail.com">yogitadamodaran@gmail.com</a></p>
+    <p>Phone: +91-9632921884</p>
+    <div class="socials">
+      <a href="https://linkedin.com/in/yogita-damodaran-78761228a" target="_blank">LinkedIn</a>
+    
+    </div>
+  </section>
+
+  <section class="footer">
+    <p>© 2025 Yogita Damodaran. All rights reserved.</p>
+  </section>
+
+</body>
+</html>

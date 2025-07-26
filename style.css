@@ -1,0 +1,112 @@
+:root {
+  --pink: #fddde6;
+  --light: #fffafc;
+  --text-dark: #3e0b1a;
+  --text-light: #7a3e4a;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: var(--light);
+  color: var(--text-dark);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  background: var(--pink);
+  font-family: 'Playfair Display', serif;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  color: var(--text-dark);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 2rem;
+  background: #ffe9ef;
+}
+
+.intro h1 {
+  font-size: 3rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.tagline {
+  font-size: 1.1rem;
+  color: var(--text-light);
+}
+
+.profile-pic {
+  border-radius: 1rem;
+  width: 220px;
+  height: auto;
+  object-fit: cover;
+  filter: sepia(10%);
+}
+
+.about {
+  padding: 2rem;
+  background: var(--light);
+  max-width: 800px;
+  margin: auto;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+}
+
+.card {
+  background: var(--pink);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+  font-family: 'Playfair Display', serif;
+}
+
+.card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.card li {
+  margin: 0.8rem 0;
+}
+
+.footer {
+  background: #ffe3ee;
+  text-align: center;
+  padding: 2rem;
+}
+
+.footer a {
+  color: var(--text-dark);
+  margin: 0 1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.socials {
+  margin-top: 1rem;
+}

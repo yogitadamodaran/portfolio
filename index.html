@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yogita Damodaran | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary: #121212;
+      --accent: #ff6b6b;
+      --bg-light: #f0f0f0;
+      --text-main: #1e1e2f;
+      --text-muted: #606060;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg-light);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    header {
+      background: var(--primary);
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    }
+
+.logo {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  color: #e6c79c;
+  padding: 0.3rem 1rem;
+  background-color: transparent;
+  border-radius: 8px;
+  animation: fadeInDown 1.2s ease-out;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.5);
+  display: inline-block;
+}
+
+    nav a {
+      margin-left: 1.5rem;
+      text-decoration: none;
+      color: #ffffff;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--accent);
+    }
+
+    .hero {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    .slider {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    .slide {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    .slide.active {
+      opacity: 1;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      top: 40%;
+      transform: translateY(-40%);
+      color: white;
+    }
+
+
+.hero h1 {
+  font-size: 5.2rem;
+  font-family: 'DM Serif Display', serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+  color: #e6c79c;
+  animation: fadeInDown 1.5s ease-out;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  position: relative;
+}
+.tagline {
+  font-size: 1.6rem;
+  font-style: italic;
+  font-family: 'DM Serif Display', serif;
+  font-weight: 400;
+  letter-spacing: 0.6px;
+  color: #e6c79c;
+  padding: 0.5rem 1rem;
+  background-color: transparent;
+  border-radius: 8px;
+  animation: fadeInUp 1.5s ease-out;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.4);
+  z-index: 2;
+  position: relative;
+  display: inline-block;
+}
+
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: #0f0f0f;
+  color: var(--text-main);
+  line-height: 1.6;
+  scroll-behavior: smooth;
+}
+
+ .about {
+  background-color: #121212;
+  max-width: 1100px;
+  margin: 2rem auto;
+  padding: 2.2rem 2rem;
+  font-size: 1.05rem;
+  line-height: 1.8;
+  text-align: center;
+  color: #e6c79c;
+  font-family: 'DM Serif Display', serif;
+  border-radius: 1rem;
+  box-shadow: 0 0 20px rgba(255, 107, 107, 0.08);
+  animation: fadeInUp 1s ease-in-out;
+}
+
+
+.about p {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.about strong {
+  color: #ffffff;
+  font-weight: 600;
+}
+
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  padding: 2.5rem 2rem;
+  max-width: 1100px;
+  margin: auto;
+  background-color: #1b1b1b;
+  animation: fadeInUp 1s ease-in-out;
+  border-radius: 1rem;
+}
+
+.card {
+  background: #121212;
+  padding: 1.8rem;
+  border-radius: 1rem;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+  color: #e6c79c;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-family: 'DM Serif Display', serif;
+  border: 1px solid rgba(230, 199, 156, 0.1);
+  backdrop-filter: blur(4px);
+}
+a.card {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+a.card:hover,
+a.card:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+.card h2 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.card ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.card li {
+  margin-bottom: 0.6rem;
+  font-size: 0.95rem;
+  color: #e6c79c;
+}
+
+@keyframes shine {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(230, 199, 156, 0.4); /* muted gold glow */
+  text-decoration: none;
+}
+
+.footer {
+  background: #121212;
+  text-align: center;
+  padding: 2rem;
+  color: #e6c79c;
+  font-family: 'DM Serif Display', serif;
+}
+
+.footer h2 {
+  font-family: 'Playfair Display', serif;
+  color: #ffffff;
+}
+
+.footer a {
+  color: #e6c79c;
+  font-weight: 600;
+  margin: 0 1rem;
+  text-decoration: none;
+}
+
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">Curious | Creative | Confident</div>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+  <div class="slider">
+    <img src="achievement1.jpg" class="slide active" />
+    <img src="achievement2.jpg" class="slide" />
+    <img src="achievement3.jpg" class="slide" />
+    <img src="achievement4.jpg" class="slide" />
+    <img src="achievement5.jpg" class="slide" />
+    <img src="achievement6.jpg" class="slide" />
+    <img src="achievement7.jpg" class="slide" />
+    <img src="achievement8.jpg" class="slide" />
+    <img src="achievement9.jpg" class="slide" />
+    <img src="achievement10.jpg" class="slide" />
+    <img src="achievement11.jpg" class="slide" />
+  </div>
+
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h1>Yogita Damodaran</h1>
+      <p class="tagline">Wired to wonder, shaped to lead.</p>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+   <section class="about" id="about">
+        <p>
+            I’m <strong>Yogita Damodaran</strong> — a Computer Science student specializing in Bioinformatics, passionate about the intersection of technology, biology, and human well-being. Growing up between the vibrant cultures of North and South India, I developed a deep appreciation for diversity and connection. I speak five languages fluently — a reflection of my belief in the power of empathy, communication, and cultural understanding.
+        </p>
+        <p>
+            I thrive at the crossroads of science and art, logic and empathy. My interest in data-driven healthcare and personalized medicine fuels my academic journey, while my leadership roles — from Class Representative to Student President — have taught me to lead with integrity, clarity, and compassion.
+        </p>
+        <p>
+            Outside the classroom, I express myself through public speaking, poetry, music, and service. I’ve performed on national stages and volunteered in schools and eldercare homes, always driven by the desire to give back. Love everyone. Trust a few. Stay true to yourself.
+        </p>
+        <p>
+            If you’re looking for someone who brings heart, insight, and innovation to the table — I’m glad you’re here.
+        </p>
+    </section>
+
+  </section>
+
+  <section class="cards">
+    <a href="experience.html" class="card experience">
+  <h2>Experience</h2>
+  <ul>
+    <li><strong>1. Research Intern</strong> – IISc Bengaluru<br><small>Computational and Data Sciences Dept.</small></li>
+    <li><strong>2. Neuromorphic Computing Intern</strong> – CFM, VIT<br><small>Material analysis</small></li>
+    <li><strong>3. Development Intern</strong> – Innoviti Technologies<br><small>Payment Technology</small></li>
+  </ul>
+</a>
+
+<div class="card education" onclick="window.location.href='edu.html'" style="cursor: pointer;">
+  <h2>Education & Certifications</h2>
+  <ul>
+    <li><strong>B.Tech CSE (Bioinformatics)</strong> – VIT Vellore<br><small>CGPA: 8.7 | 2023–2027</small></li>
+    <li><strong>Schooling</strong> – KV DRDO Bangalore<br><small>Top 1.5% in KVS | School Captain</small></li>
+    <li><strong>Johns Hopkins University</strong><br><small>Introduction to Genomic Technologies</small></li>
+  </ul>
+</div>
+
+      <a href="projects.html" class="card">
+  <h2>Projects & Skills</h2>
+  <ul>
+    <li>Rh Incompatibility Simulator – IISc</li>
+    <li>React Internship Portal – CFM</li>
+    <li>ASO Issue Resolution – Innoviti</li>
+    <li>Arduino Water Monitor – VIT</li>
+  </ul>
+</a>
+
+   <a href="achievements.html" class="card">
+  <h2>Achievements</h2>
+  <ul>
+    <li>Gold Medalist – IMO & NSO</li>
+    <li>Finalist – Mood Indigo, IIT Bombay</li>
+    <li>Student President & NCSC Coordinator</li>
+  </ul>
+</a>
+
+  </section>
+
+  <section class="footer" id="contact">
+    <h2>Let’s Connect</h2>
+    <p>Email: <a href="mailto:yogitadamodaran@gmail.com">yogitadamodaran@gmail.com</a></p>
+    <p>Phone: +91-9632921884</p>
+    <div class="socials">
+      <a href="https://linkedin.com/in/yogita-damodaran-78761228a" target="_blank">LinkedIn</a>
+    
+    </div>
+  </section>
+
+  <script>
+    const slides = document.querySelectorAll('.slide');
+    let current = 0;
+
+    setInterval(() => {
+      slides[current].classList.remove('active');
+      current = (current + 1) % slides.length;
+      slides[current].classList.add('active');
+    }, 4000);
+  </script>
+</body>
+</html>
